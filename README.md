@@ -1,4 +1,4 @@
-# RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha
+# TypeScript / Express / TypeORM RESTful API boilerplate
 
 Scalable boilerplate for building RESTful APIs
 
