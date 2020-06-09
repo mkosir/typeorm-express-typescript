@@ -11,5 +11,5 @@ database/*
 log/*
 !log/.gitkeep 
 
-# config content should be in gitignore
+# keep config for demo purpose
 # config/
