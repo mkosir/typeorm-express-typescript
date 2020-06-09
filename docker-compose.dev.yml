@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db_postgres:
+    env_file:
+      - ./config/dev.env
+
+  be_boilerplate:
+    entrypoint: /bin/bash './scripts/be-node-dev.sh'
+    env_file:
+      - ./config/dev.env
+
+  be_boilerplate_test:
+    container_name: 'be_test_boilerplate'
+    build: .
+    stdin_open: true
+    tty: true
+    depends_on:
+      - be_boilerplate
+    links:
+      - db_postgres
+    env_file:
+      - ./config/dev.env
+    volumes:
+      - .:/app/
+      - /app/node_modules

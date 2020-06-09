@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db_postgres:
+    container_name: 'db_boilerplate'
+    image: 'postgres:12-alpine'
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./database/boilerplate:/var/lib/postgresql/data/
+
+  be_boilerplate:
+    container_name: 'be_boilerplate'
+    build: .
+    restart: always
+    depends_on:
+      - db_postgres
+    links:
+      - db_postgres
+    ports:
+      - '4000:4000'
+    volumes:
+      - .:/app/
+      - /app/node_modules

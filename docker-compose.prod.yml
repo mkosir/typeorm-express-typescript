@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db_postgres:
+    env_file:
+      - ./config/prod.env
+
+  be_boilerplate:
+    command: npm start
+    env_file:
+      - ./config/prod.env

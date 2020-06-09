@@ -1,0 +1,79 @@
+{
+  "name": "express-typescript-typeorm-boilerplate",
+  "version": "1.0.0",
+  "description": "RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha.",
+  "scripts": {
+    "dev": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "start": "tsc && node ./build/app.js",
+    "build": "tsc",
+    "lint": "eslint --max-warnings 0 --ext .js,ts src",
+    "lint-prettier": "prettier --config .prettierrc --list-different '{src,test}/**/*.{ts,js,css,scss}'",
+    "prettier": "prettier --config .prettierrc --write '{src,test}/**/*.{ts,js,css,scss}'",
+    "test": "mocha -r ts-node/register 'test/integration/**/*.test.ts' --timeout 20000 --exit",
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up --build",
+    "docker:stage": "docker-compose -f docker-compose.yml -f docker-compose.stage.yml up --build",
+    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build",
+    "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run -f ./src/typeorm/config/ormconfig.ts",
+    "migration:revert": "ts-node ./node_modules/typeorm/cli.js migration:revert -f ./src/typeorm/config/ormconfig.ts",
+    "migration:generate": "ts-node ./node_modules/.bin/typeorm migration:generate -f ./src/typeorm/config/ormconfig.ts -n ",
+    "migration:create": "ts-node ./node_modules/.bin/typeorm migration:create -f ./src/typeorm/config/ormconfig.ts -n ",
+    "seed:run": "ts-node ./node_modules/.bin/typeorm migration:run -f ./src/typeorm/config/ormconfig-seed.ts",
+    "seed:revert": "ts-node ./node_modules/.bin/typeorm migration:revert -f ./src/typeorm/config/ormconfig-seed.ts",
+    "seed:generate": "ts-node ./node_modules/.bin/typeorm migration:generate -f ./src/typeorm/config/ormconfig-seed.ts -n ",
+    "seed:create": "ts-node ./node_modules/.bin/typeorm migration:create -f ./src/typeorm/config/ormconfig-seed.ts -n "
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.2.1",
+    "reflect-metadata": "^0.1.13",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.0",
+    "@types/chai": "^4.2.11",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/helmet": "0.0.47",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mocha": "^7.0.2",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^14.0.6",
+    "@types/supertest": "^2.0.9",
+    "@types/validator": "^13.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "mocha": "^7.2.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2",
+    "ts-node": "8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typeorm": "^0.2.25",
+    "typescript": "3.9.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,scss,json,md}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

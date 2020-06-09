@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+node_modules/
+build/
+tmp/
+temp/
+
+database/*
+!database/.gitkeep 
+
+log/*
+!log/.gitkeep 
+
+# config content should be in gitignore
+# config/
