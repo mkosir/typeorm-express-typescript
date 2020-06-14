@@ -12,7 +12,7 @@ Scalable boilerplate for building RESTful APIs with JWT authentication and role 
 - Clone the repo
 - `npm run docker:dev`
 
-  Two docker container instances are going to be created one with Postgres database populated with 💊 Breaking Bad characters in `Users` table and one Node instance with running boilerplate RESTful API service.
+  Two docker container instances are going to be created one with Postgres database seeded with 💊 Breaking Bad characters in `Users` table and one Node instance with running boilerplate RESTful API service.
 
   Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
 
