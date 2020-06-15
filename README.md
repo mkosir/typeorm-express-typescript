@@ -18,7 +18,7 @@ Scalable boilerplate for building RESTful APIs with JWT authentication and role 
 
 ## Boilerplate made of:
 
-- [Docker](https://www.docker.com/) environment
+- [Docker](https://www.docker.com/) environment, set up for microservices development and deployment
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
 - Linting with [ESLint](https://eslint.org/)
