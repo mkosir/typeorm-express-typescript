@@ -11,5 +11,5 @@ database/*
 log/*
 !log/.gitkeep 
 
-# keep config for demo purpose
+# keep config folder with env files for demo purposes
 # config/
