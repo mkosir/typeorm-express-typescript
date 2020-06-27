@@ -34,5 +34,6 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 Each boilerplate comes with it's own flavor, check out other awesome boilerplates:
 
 - [Express and TypeORM with TypeScript](https://github.com/typeorm/typescript-express-example)
+- [Node.js, Express.js & TypeScript Boilerplate for Web Apps](https://github.com/jverhoelen/node-express-typescript-boilerplate)
 - [Express boilerplate for building RESTful APIs](https://github.com/danielfsousa/express-rest-es2017-boilerplate)
 - [A delightful way to building a RESTful API with NodeJs & TypeScript by @w3tecch](https://github.com/w3tecch/express-typescript-boilerplate)
