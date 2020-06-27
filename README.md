@@ -17,11 +17,11 @@ Scalable boilerplate for building RESTful APIs with JWT authentication and role 
   - one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are user=`admin`, password=`admin123` which you can change in [.env file](/config/dev.env).
   - and one Node instance container with running boilerplate RESTful API service.
 
-  Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
+  Visit [localhost:4000](http://localhost:4000/) or if using Postman grab and import [config](/postman).
 
 ## Boilerplate made of:
 
-- [Docker](https://www.docker.com/) environment
+- [Docker](https://www.docker.com/) environment, set up for microservices development and deployment
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
 - Linting with [ESLint](https://eslint.org/)
