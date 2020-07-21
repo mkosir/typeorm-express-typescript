@@ -1,4 +1,7 @@
 {
+  "ts-node": {
+    "transpileOnly": true
+  },
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
@@ -13,7 +16,6 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "typeRoots": ["./src/types", "./node_modules/@types"]
-    // "baseUrl": "."
   },
   "include": ["./src/**/*.tsx", "./src/**/*.ts"],
   "exclude": ["node_modules", "test/**/*.ts"]
