@@ -21,7 +21,7 @@ app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(getLanguage);
-console.log('Log: __dirname', __dirname);
+
 try {
   const accessLogStream = fs.createWriteStream(path.join(__dirname, '../log/access.log'), {
     flags: 'a',
