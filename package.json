@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha.",
   "scripts": {
-    "dev": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "dev": "set debug=* && ts-node-dev --respawn ./src/index.ts",
     "start": "tsc && node ./build/app.js",
     "build": "tsc",
     "lint": "eslint --max-warnings 0 --ext .js,ts src",
