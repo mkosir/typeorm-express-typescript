@@ -2,9 +2,9 @@ import { Request, Response, NextFunction } from 'express';
 import { getRepository } from 'typeorm';
 import validator from 'validator';
 
-import { ConstsUser } from '../../../consts/ConstsUser';
-import { User } from '../../../typeorm/entities/user/User';
-import { CustomError, ErrorValidation } from '../../../utils/response/CustomError';
+import { ConstsUser } from 'consts/ConstsUser';
+import { User } from 'typeorm/entities/user/User';
+import { CustomError, ErrorValidation } from 'utils/response/CustomError';
 
 export const validatorEdit = async (req: Request, res: Response, next: NextFunction) => {
   let { username, name } = req.body;

@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import { getRepository } from 'typeorm';
 
-import { User } from '../../typeorm/entities/user/User';
-import { CustomError } from '../../utils/response/CustomError';
+import { User } from 'typeorm/entities/user/User';
+import { CustomError } from 'utils/response/CustomError';
 
 export const list = async (req: Request, res: Response, next: NextFunction) => {
   const userRepository = getRepository(User);

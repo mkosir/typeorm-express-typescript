@@ -1,5 +1,6 @@
 import { JwtPayload } from '../JwtPayload';
-import { Language } from '../../typeorm/entities/user/types';
+
+import { Language } from 'typeorm/entities/user/types';
 
 declare global {
   namespace Express {

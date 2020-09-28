@@ -1,11 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
 import { getRepository } from 'typeorm';
 
-import { User } from '../../typeorm/entities/user/User';
-import { JwtPayload } from '../../types/JwtPayload';
-import { Role } from '../../typeorm/entities/user/types';
-import { createJwtToken } from '../../utils/createJwtToken';
-import { CustomError } from '../../utils/response/CustomError';
+import { User } from 'typeorm/entities/user/User';
+import { Role } from 'typeorm/entities/user/types';
+import { JwtPayload } from 'types/JwtPayload';
+import { createJwtToken } from 'utils/createJwtToken';
+import { CustomError } from 'utils/response/CustomError';
 
 export const login = async (req: Request, res: Response, next: NextFunction) => {
   const { email, password } = req.body;
