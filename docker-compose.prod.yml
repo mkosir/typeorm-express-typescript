@@ -1,11 +1,14 @@
 version: '3'
 
 services:
-  db_postgres:
-    env_file:
-      - ./config/prod.env
-
   be_boilerplate:
+    deploy:
+      resources:
+        limits:
+          cpus: '0.90'
+          # memory: 400M
     command: npm start
+    ports:
+      - '80:4000'
     env_file:
       - ./config/prod.env
