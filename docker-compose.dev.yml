@@ -13,7 +13,7 @@ services:
       - ./database/boilerplate:/var/lib/postgresql/data/
 
   be_boilerplate:
-    entrypoint: /bin/bash './scripts/be-node-dev.sh'
+    entrypoint: /bin/sh './scripts/be-node-dev.sh'
     env_file:
       - ./config/dev.env
     ports:
