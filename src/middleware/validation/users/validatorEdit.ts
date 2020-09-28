@@ -3,7 +3,7 @@ import { getRepository } from 'typeorm';
 import validator from 'validator';
 
 import { ConstsUser } from '../../../consts/ConstsUser';
-import { User } from '../../../typeorm/entities/User';
+import { User } from '../../../typeorm/entities/user/User';
 import { CustomError, ErrorValidation } from '../../../utils/response/CustomError';
 
 export const validatorEdit = async (req: Request, res: Response, next: NextFunction) => {
