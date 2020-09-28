@@ -16,12 +16,12 @@ services:
     entrypoint: /bin/bash './scripts/be-node-dev.sh'
     env_file:
       - ./config/dev.env
+    ports:
+      - '4000:4000'
     depends_on:
       - db_postgres
     links:
       - db_postgres
-    ports:
-      - '4000:4000'
 
   be_boilerplate_test:
     container_name: 'be_test_boilerplate'
