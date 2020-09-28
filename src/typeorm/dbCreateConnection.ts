@@ -8,7 +8,6 @@ export const dbCreateConnection = async () => {
     console.log(
       `Database connection success. Connection name: '${conn.name}' Database: '${conn.options.database}'`,
     );
-    return conn;
   } catch (err) {
     console.log(err);
   }
