@@ -1,6 +1,6 @@
 # TypeScript / Express / TypeORM RESTful API boilerplate
 
-Scalable boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript, TypeORM, & Mocha.
+Scalable boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript, TypeORM & Mocha.
 
 ## Requirements
 
