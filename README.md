@@ -21,6 +21,8 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 
 ## Boilerplate made of:
 
+- [Express](https://github.com/expressjs/express) framework
+- [TypeScript v4](https://github.com/microsoft/TypeScript) codebase
 - [Docker](https://www.docker.com/) environment, set up for microservices development and deployment
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
