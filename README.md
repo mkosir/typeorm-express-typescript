@@ -1,6 +1,6 @@
 # TypeScript / Express / TypeORM RESTful API boilerplate
 
-Minimal boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript, TypeORM & Mocha with focus on best practices and painless developer experience.
+Minimal boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript & TypeORM with focus on best practices and painless developer experience.
 
 ## Requirements
 
@@ -26,9 +26,9 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 - [Docker](https://www.docker.com/) environment, set up for microservices development and deployment
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
+- Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - Linting with [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/) code formatter
-- Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - Git hooks with [Husky](https://github.com/typicode/husky)
 
 ## Other awesome boilerplates:
