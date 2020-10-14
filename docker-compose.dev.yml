@@ -6,7 +6,7 @@ services:
     image: 'postgres:12-alpine'
     restart: always
     env_file:
-      - ./config/dev.env
+      - .env
     ports:
       - '5432:5432'
     volumes:
@@ -15,7 +15,7 @@ services:
   be_boilerplate:
     entrypoint: /bin/sh './scripts/be-node-dev.sh'
     env_file:
-      - ./config/dev.env
+      - .env
     ports:
       - '4000:4000'
     depends_on:
@@ -33,7 +33,7 @@ services:
     links:
       - db_postgres
     env_file:
-      - ./config/dev.env
+      - .env
     volumes:
       - .:/app/
       - /app/node_modules
