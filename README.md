@@ -10,7 +10,7 @@ Minimal boilerplate for building RESTful APIs with JWT authentication and role b
 ## Running
 
 - Clone the repo
-- `npm run docker:dev`
+- `npm run docker:dev` 🚀
 
   Two docker container instances are going to be created:
 
