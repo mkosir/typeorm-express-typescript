@@ -28,7 +28,7 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 - [Docker](https://www.docker.com/) environment, set up for microservices development and deployment
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
-- Consistent http responses and requests payloads with [type definitions](./src/types/express/index.d.ts)
+- Consistent HTTP responses and requests payloads with [type definitions](./src/types/express/index.d.ts)
 - Error handling middleware with consistent [schema JSON response](./src/utils/response/CustomError.ts), that can be modified to suit your needs
 - Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - Set local, stage or production environmental variables using [dotenv](https://github.com/motdotla/dotenv) with [type definitions](./src/types/ProcessEnv.d.ts)
