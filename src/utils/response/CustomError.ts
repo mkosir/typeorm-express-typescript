@@ -1,5 +1,14 @@
 export type ErrorValidation = { [key: string]: string };
 type ErrorType = 'General' | 'Raw' | 'Validation' | 'Unauthorized';
+type ErrorResponse = {
+  errorType: ErrorType;
+  errorMessage: string;
+  errors: string[] | null;
+  errorRaw: any;
+  errorsValidation: ErrorValidation[] | null;
+  // If NODE_ENV='production' the stack trace is not included in the response.
+  stack?: string;
+};
 
 export class CustomError extends Error {
   private httpStatusCode: number;
@@ -18,8 +27,6 @@ export class CustomError extends Error {
   ) {
     super(message);
 
-    // Setting the this.name property to the constructor’s name will reference
-    // 'ErrorResponse' in stack traces instead of the generic 'Error' name.
     this.name = this.constructor.name;
 
     this.httpStatusCode = httpStatusCode;
@@ -33,21 +40,13 @@ export class CustomError extends Error {
     return this.httpStatusCode;
   }
 
-  get JSON(): {
-    error_type: ErrorType;
-    error_message: string;
-    errors: string[] | null;
-    error_raw: any;
-    errors_validation: ErrorValidation[] | null;
-    // If NODE_ENV='production' the stack trace is not included in the production environment.
-    stack?: string;
-  } {
+  get JSON(): ErrorResponse {
     return {
-      error_type: this.error_type,
-      error_message: this.message,
+      errorType: this.error_type,
+      errorMessage: this.message,
       errors: this.errors,
-      error_raw: this.error_raw,
-      errors_validation: this.errors_validation,
+      errorRaw: this.error_raw,
+      errorsValidation: this.errors_validation,
       stack: this.stack,
     };
   }
