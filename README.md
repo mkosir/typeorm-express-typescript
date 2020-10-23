@@ -29,6 +29,7 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
 - Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
+- Set local, stage or production environmental variables using [dotenv](https://github.com/motdotla/dotenv) with [type definitions](./src/types/ProcessEnv.d.ts)
 - Linting with [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/) code formatter
 - Git hooks with [Husky](https://github.com/typicode/husky)
