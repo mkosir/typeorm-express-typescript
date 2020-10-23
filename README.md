@@ -30,7 +30,7 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 - JWT authentication and role based authorization using custom middleware
 
 <details>
-<summary>- Error handling middleware with consistent schema JSON response</summary>
+<summary>• Error handling middleware with consistent schema JSON response</summary>
 
 ```
 type ErrorResponse = {
