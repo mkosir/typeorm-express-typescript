@@ -30,11 +30,11 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 - JWT authentication and role based authorization using custom middleware
 - Consistent HTTP responses and requests payloads with [type definitions](./src/types/express/index.d.ts)
 - Error handling middleware with consistent [schema JSON response](./src/utils/response/CustomError.ts), that can be modified to suit your needs
-- Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - Set local, stage or production environmental variables using [dotenv](https://github.com/motdotla/dotenv) with [type definitions](./src/types/ProcessEnv.d.ts)
+- Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - Linting with [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/) code formatter
-- Git hooks with [Husky](https://github.com/typicode/husky)
+- Git hooks with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
 
 ## Other awesome boilerplates:
 
