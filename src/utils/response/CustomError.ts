@@ -6,34 +6,34 @@ type ErrorResponse = {
   errors: string[] | null;
   errorRaw: any;
   errorsValidation: ErrorValidation[] | null;
-  // If NODE_ENV='production' the stack trace is not included in the response.
+  // If NODE_ENV='production' the stack trace is not included in the response
   stack?: string;
 };
 
 export class CustomError extends Error {
   private httpStatusCode: number;
-  private error_type: ErrorType;
+  private errorType: ErrorType;
   private errors: string[] | null;
-  private error_raw: any;
-  private errors_validation: ErrorValidation[] | null;
+  private errorRaw: any;
+  private errorsValidation: ErrorValidation[] | null;
 
   constructor(
     httpStatusCode: number,
-    error_type: ErrorType,
+    errorType: ErrorType,
     message: string,
     errors: string[] | null = null,
-    error_raw: any = null,
-    errors_validation: ErrorValidation[] | null = null,
+    errorRaw: any = null,
+    errorsValidation: ErrorValidation[] | null = null,
   ) {
     super(message);
 
     this.name = this.constructor.name;
 
     this.httpStatusCode = httpStatusCode;
-    this.error_type = error_type;
+    this.errorType = errorType;
     this.errors = errors;
-    this.error_raw = error_raw;
-    this.errors_validation = errors_validation;
+    this.errorRaw = errorRaw;
+    this.errorsValidation = errorsValidation;
   }
 
   get HttpStatusCode() {
@@ -42,11 +42,11 @@ export class CustomError extends Error {
 
   get JSON(): ErrorResponse {
     return {
-      errorType: this.error_type,
+      errorType: this.errorType,
       errorMessage: this.message,
       errors: this.errors,
-      errorRaw: this.error_raw,
-      errorsValidation: this.errors_validation,
+      errorRaw: this.errorRaw,
+      errorsValidation: this.errorsValidation,
       stack: this.stack,
     };
   }
