@@ -3,7 +3,7 @@ version: '3'
 services:
   db_postgres:
     container_name: 'db_boilerplate'
-    image: 'postgres:12-alpine'
+    image: 'postgres:13-alpine'
     restart: always
     env_file:
       - .env
