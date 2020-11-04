@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { getRepository } from 'typeorm';
 
-import { User } from 'typeorm/entities/user/User';
+import { User } from 'typeorm/entities/users/User';
 import { CustomError } from 'utils/response/CustomError';
 
 export const register = async (req: Request, res: Response, next: NextFunction) => {

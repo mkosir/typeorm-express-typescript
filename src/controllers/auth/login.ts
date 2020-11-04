@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import { getRepository } from 'typeorm';
 
-import { User } from 'typeorm/entities/user/User';
-import { Role } from 'typeorm/entities/user/types';
+import { User } from 'typeorm/entities/users/User';
+import { Role } from 'typeorm/entities/users/types';
 import { JwtPayload } from 'types/JwtPayload';
 import { createJwtToken } from 'utils/createJwtToken';
 import { CustomError } from 'utils/response/CustomError';
