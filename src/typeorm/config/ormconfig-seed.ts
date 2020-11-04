@@ -1,4 +1,5 @@
 import { ConnectionOptions } from 'typeorm';
+import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 
 const configSeed: ConnectionOptions = {
   type: 'postgres',
@@ -14,6 +15,7 @@ const configSeed: ConnectionOptions = {
   cli: {
     migrationsDir: 'src/typeorm/seeds',
   },
+  namingStrategy: new SnakeNamingStrategy(),
 };
 
 export = configSeed;
