@@ -8,7 +8,7 @@ export const list = async (req: Request, res: Response, next: NextFunction) => {
   const userRepository = getRepository(User);
   try {
     const users = await userRepository.find({
-      select: ['id', 'username', 'name', 'email', 'role', 'language', 'createdAt', 'updatedAt'],
+      select: ['id', 'username', 'name', 'email', 'role', 'language', 'created_at', 'updated_at'],
     });
     res.customSuccess(200, 'List of users.', users);
   } catch (err) {

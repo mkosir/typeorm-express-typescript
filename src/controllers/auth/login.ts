@@ -29,7 +29,7 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
       name: user.name,
       email: user.email,
       role: user.role as Role,
-      created_at: user.createdAt,
+      created_at: user.created_at,
     };
 
     try {
