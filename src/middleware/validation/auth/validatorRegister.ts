@@ -24,9 +24,10 @@ export const validatorRegister = (req: Request, res: Response, next: NextFunctio
     errorsValidation.push({ password: 'Password is required' });
   }
 
-  const passwordMinLength = ConstsUser.PASSWORD_MIN_CHAR;
-  if (!validator.isLength(password, { min: passwordMinLength })) {
-    errorsValidation.push({ password: `Password must be at least ${passwordMinLength} characters` });
+  if (!validator.isLength(password, { min: ConstsUser.PASSWORD_MIN_CHAR })) {
+    errorsValidation.push({
+      password: `Password must be at least ${ConstsUser.PASSWORD_MIN_CHAR} characters`,
+    });
   }
 
   if (validator.isEmpty(passwordConfirm)) {

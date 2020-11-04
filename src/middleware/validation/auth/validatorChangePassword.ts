@@ -24,9 +24,10 @@ export const validatorChangePassword = (req: Request, res: Response, next: NextF
     errorsValidation.push({ passwordConfirm: 'Password confirm is required' });
   }
 
-  const passwordMinLength = ConstsUser.PASSWORD_MIN_CHAR;
-  if (!validator.isLength(passwordNew, { min: passwordMinLength })) {
-    errorsValidation.push({ passwordNew: `Password must be at least ${passwordMinLength} characters` });
+  if (!validator.isLength(passwordNew, { min: ConstsUser.PASSWORD_MIN_CHAR })) {
+    errorsValidation.push({
+      passwordNew: `Password must be at least ${ConstsUser.PASSWORD_MIN_CHAR} characters`,
+    });
   }
 
   if (!validator.equals(passwordNew, passwordConfirm)) {

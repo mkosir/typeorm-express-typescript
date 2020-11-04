@@ -1,6 +1,3 @@
 export enum ConstsUser {
-  PASSWORD_MIN_CHAR = 4,
-  USERNAME_MAX_CHAR = 40,
-  NAME_MAX_CHAR = 40,
-  EMAIL_MAX_CHAR = 100,
+  PASSWORD_MIN_CHAR = 6,
 }

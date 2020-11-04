@@ -1,8 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { getRepository } from 'typeorm';
-import validator from 'validator';
 
-import { ConstsUser } from 'consts/ConstsUser';
 import { User } from 'typeorm/entities/users/User';
 import { CustomError, ErrorValidation } from 'utils/response/CustomError';
 
@@ -17,16 +15,6 @@ export const validatorEdit = async (req: Request, res: Response, next: NextFunct
   const user = await userRepository.findOne({ username });
   if (user) {
     errorsValidation.push({ username: `Username '${username}' already exists` });
-  }
-
-  const usernameMaxLength = ConstsUser.USERNAME_MAX_CHAR;
-  if (!validator.isLength(username, { max: usernameMaxLength })) {
-    errorsValidation.push({ username: `Username can be max ${usernameMaxLength} characters` });
-  }
-
-  const nameMaxLength = ConstsUser.NAME_MAX_CHAR;
-  if (!validator.isLength(name, { max: nameMaxLength })) {
-    errorsValidation.push({ name: `Username can be max ${nameMaxLength} characters` });
   }
 
   if (errorsValidation.length !== 0) {
