@@ -13,7 +13,7 @@ Minimal boilerplate for building RESTful APIs with JWT authentication and role b
 
 _Easily set up a local development environment!_
 
-- Clone the repo
+- clone the repo
 - `npm run docker:dev` 🚀
 
 Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
