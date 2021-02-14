@@ -55,10 +55,10 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
     "supertest": "^6.1.1",
     "ts-node": "9.1.1",
     "ts-node-dev": "^1.1.1",
@@ -66,15 +66,9 @@
     "typeorm-naming-strategies": "^2.0.0",
     "typescript": "4.1.3"
   },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,css,scss,json,md}": [
-      "prettier --config .prettierrc --write",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "pretty-quick --staged",
       "pre-push": "npm run lint && npm run build"
     }
   }
