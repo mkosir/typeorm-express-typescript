@@ -7,6 +7,10 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "matchUpdateTypes": ["minor", "major"],
+      "enabled": false
+    },
+    {
       "automerge": true,
       "labels": ["dependencies", "automerge"],
       "groupName": "group:dependencies",
@@ -17,10 +21,6 @@
       "labels": ["devDependencies", "automerge"],
       "groupName": "group:devDependencies",
       "matchDepTypes": ["devDependencies"]
-    },
-    {
-      "matchUpdateTypes": ["minor", "major"],
-      "enabled": false
     }
   ]
 }
