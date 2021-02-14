@@ -5,7 +5,7 @@
   "assignees": ["mkosir"],
   "assignAutomerge": true,
   "requiredStatusChecks": null,
-  "rangeStrategy": "beump",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "automerge": true,
