@@ -2,7 +2,7 @@
   "extends": ["config:base"],
   "labels": ["dependencies", "automerge"],
   "separateMinorPatch": false,
-  "assignees": ["mksosir"],
+  "assignees": ["mkosir"],
   "assignAutomerge": true,
   "requiredStatusChecks": null,
   "rangeStrategy": "bump",
