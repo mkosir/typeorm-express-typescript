@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "labels": ["dependencies", "automerge"],
-  "separateMinorPatch": true,
+  "separateMinorPatch": false,
   "assignees": ["mkosir"],
   "assignAutomerge": true,
   "requiredStatusChecks": null,
