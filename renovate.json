@@ -1,0 +1,30 @@
+{
+  "extends": ["config:base", "group:all"],
+  "labels": ["dependencies", "automerge"],
+  "separateMinorPatch": true,
+  "assignees": ["mkosir"],
+  "assignAutomerge": true,
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "labels": ["linting"],
+      "groupName": "monorepo:eslint",
+      "packageNames": [
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "eslint",
+        "eslint-config-prettier",
+        "eslint-config-import",
+        "eslint-plugin-prettier"
+      ]
+    },
+    {
+      "labels": ["@types"],
+      "groupName": "monorepo:@types",
+      "matchPackagePatterns": ["^@types"]
+    }
+  ]
+}
