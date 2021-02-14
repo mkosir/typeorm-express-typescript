@@ -11,7 +11,7 @@
     },
     {
       "labels": ["linting"],
-      "groupName": "monorepo:eslint",
+      "groupName": "group:eslint",
       "packageNames": [
         "@typescript-eslint/eslint-plugin",
         "@typescript-eslint/parser",
@@ -23,8 +23,8 @@
     },
     {
       "labels": ["@types"],
-      "groupName": "monorepo:@types",
-      "matchPackagePatterns": ["^@types"]
+      "groupName": "group:@types",
+      "matchPackagePatterns": ["^@types/"]
     }
   ]
 }
