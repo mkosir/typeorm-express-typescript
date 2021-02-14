@@ -7,14 +7,12 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchUpdateTypes": ["patch"],
       "automerge": true,
       "labels": ["dependencies", "automerge"],
       "groupName": "group:dependencies",
       "matchDepTypes": ["dependencies"]
     },
     {
-      "matchUpdateTypes": ["patch"],
       "automerge": true,
       "labels": ["devDependencies", "automerge"],
       "groupName": "group:devDependencies",
