@@ -8,7 +8,7 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch"],
+      "updateTypes": ["patch"],
       "automerge": true,
       "labels": ["linting"],
       "groupName": "group:eslint",
@@ -22,14 +22,14 @@
       ]
     },
     {
-      "updateTypes": ["minor", "patch"],
+      "updateTypes": ["patch"],
       "automerge": true,
       "labels": ["dependencies"],
       "groupName": "group:dependencies",
       "matchDepTypes": ["dependencies"]
     },
     {
-      "updateTypes": ["minor", "patch"],
+      "updateTypes": ["patch"],
       "automerge": true,
       "labels": ["devDependencies"],
       "groupName": "group:devDependencies",
