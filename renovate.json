@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-  "separateMinorPatch": false,
+  "separateMinorPatch": true,
   "assignees": ["mkosir"],
   "assignAutomerge": true,
   "requiredStatusChecks": null,
