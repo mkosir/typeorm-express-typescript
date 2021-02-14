@@ -11,15 +11,17 @@ Minimal boilerplate for building RESTful APIs with JWT authentication and role b
 
 ## Running
 
-- Clone the repo
+_Easily set up a local development environment!_
+
+- clone the repo
 - `npm run docker:dev` 🚀
+
+Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
 
   Two docker container instances are going to be created:
 
   - one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are user=`walter`, password=`white` which you can change in [.env file](./.env).
   - and one Node (v14 Alpine) instance container with running boilerplate RESTful API service.
-
-Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
 
 ## Features:
 
