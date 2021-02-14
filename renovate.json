@@ -5,7 +5,7 @@
   "assignees": ["mkosir"],
   "assignAutomerge": true,
   "requiredStatusChecks": null,
-  "rangeStrategy": "replace",
+  "rangeStrategy": "bump",
   "packageRules": [
     {
       "updateTypes": ["minor", "patch"],
@@ -20,13 +20,6 @@
         "eslint-config-import",
         "eslint-plugin-prettier"
       ]
-    },
-    {
-      "updateTypes": ["minor", "patch"],
-      "automerge": true,
-      "labels": ["@types"],
-      "groupName": "group:@types",
-      "matchPackagePatterns": ["^@types/"]
     },
     {
       "updateTypes": ["minor", "patch"],
