@@ -9,9 +9,7 @@
   "packageRules": [
     {
       "updateTypes": ["minor", "patch"],
-      "automerge": true
-    },
-    {
+      "automerge": true,
       "labels": ["linting"],
       "groupName": "group:eslint",
       "packageNames": [
@@ -24,16 +22,22 @@
       ]
     },
     {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true,
       "labels": ["@types"],
       "groupName": "group:@types",
       "matchPackagePatterns": ["^@types/"]
     },
     {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true,
       "labels": ["dependencies"],
       "groupName": "group:dependencies",
       "matchDepTypes": ["dependencies"]
     },
     {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true,
       "labels": ["devDependencies"],
       "groupName": "group:devDependencies",
       "matchDepTypes": ["devDependencies"]
