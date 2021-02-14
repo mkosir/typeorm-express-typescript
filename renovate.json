@@ -5,7 +5,7 @@
   "assignees": ["mkosir"],
   "assignAutomerge": true,
   "requiredStatusChecks": null,
-  "rangeStrategy": "update-lockfile",
+  "rangeStrategy": "replace",
   "packageRules": [
     {
       "updateTypes": ["minor", "patch"],
