@@ -20,7 +20,6 @@
       "matchDepTypes": ["devDependencies"]
     },
     {
-      "matchDepTypes": ["dependencies", "devDependencies"],
       "updateTypes": ["minor", "major"],
       "enabled": false
     }
