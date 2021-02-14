@@ -8,32 +8,21 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "updateTypes": ["patch"],
-      "automerge": true,
-      "labels": ["linting"],
-      "groupName": "group:eslint",
-      "packageNames": [
-        "@typescript-eslint/eslint-plugin",
-        "@typescript-eslint/parser",
-        "eslint",
-        "eslint-config-prettier",
-        "eslint-config-import",
-        "eslint-plugin-prettier"
-      ]
-    },
-    {
-      "updateTypes": ["patch"],
       "automerge": true,
       "labels": ["dependencies"],
       "groupName": "group:dependencies",
       "matchDepTypes": ["dependencies"]
     },
     {
-      "updateTypes": ["patch"],
       "automerge": true,
       "labels": ["devDependencies"],
       "groupName": "group:devDependencies",
       "matchDepTypes": ["devDependencies"]
+    },
+    {
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "updateTypes": ["minor", "major"],
+      "enabled": false
     }
   ]
 }
