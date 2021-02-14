@@ -27,6 +27,16 @@
       "labels": ["@types"],
       "groupName": "group:@types",
       "matchPackagePatterns": ["^@types/"]
+    },
+    {
+      "labels": ["dependencies"],
+      "groupName": "group:dependencies",
+      "matchDepTypes": ["dependencies"]
+    },
+    {
+      "labels": ["devDependencies"],
+      "groupName": "group:devDependencies",
+      "matchDepTypes": ["devDependencies"]
     }
   ]
 }
