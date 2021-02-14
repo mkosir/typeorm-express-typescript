@@ -19,6 +19,10 @@
       "labels": ["devDependencies", "automerge"],
       "groupName": "group:devDependencies",
       "matchDepTypes": ["devDependencies"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "major"],
+      "enabled": false
     }
   ]
 }
