@@ -1,6 +1,5 @@
 {
   "extends": ["config:base"],
-  "labels": ["dependencies", "automerge"],
   "separateMinorPatch": false,
   "assignees": ["mkosir"],
   "assignAutomerge": true,
@@ -9,13 +8,13 @@
   "packageRules": [
     {
       "automerge": true,
-      "labels": ["dependencies"],
+      "labels": ["dependencies", "automerge"],
       "groupName": "group:dependencies",
       "matchDepTypes": ["dependencies"]
     },
     {
       "automerge": true,
-      "labels": ["devDependencies"],
+      "labels": ["devDependencies", "automerge"],
       "groupName": "group:devDependencies",
       "matchDepTypes": ["devDependencies"]
     },
