@@ -13,13 +13,13 @@
     {
       "automerge": true,
       "labels": ["dependencies", "automerge"],
-      "groupName": "group:dependencies",
+      "groupName": "dependencies:patch",
       "matchDepTypes": ["dependencies"]
     },
     {
       "automerge": true,
       "labels": ["devDependencies", "automerge"],
-      "groupName": "group:devDependencies",
+      "groupName": "devDependencies:patch",
       "matchDepTypes": ["devDependencies"]
     }
   ]
