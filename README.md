@@ -47,6 +47,8 @@ Two docker containers are created:
 - [Prettier](https://prettier.io/) code formatter
 - Git hooks with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
 - Automated npm & Docker dependency updates with [Renovate](https://github.com/renovatebot/renovate) (patch version only)
+- Commit messages must meet [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) format.  
+  After staging changes just run `npm run commit` and get instant feedback on your commit message formatting and be prompted for required fields by [Commitizen](https://github.com/commitizen/cz-cli)
 
 ## Other awesome boilerplates:
 
