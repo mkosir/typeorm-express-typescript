@@ -23,14 +23,7 @@ export const validatorLogin = (req: Request, res: Response, next: NextFunction) 
   }
 
   if (errorsValidation.length !== 0) {
-    const customError = new CustomError(
-      400,
-      'Validation',
-      'Login validation error',
-      null,
-      null,
-      errorsValidation,
-    );
+    const customError = new CustomError(400, 'Validation', 'Login validation error', null, null, errorsValidation);
     return next(customError);
   }
   return next();

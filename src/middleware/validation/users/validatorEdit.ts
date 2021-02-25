@@ -18,14 +18,7 @@ export const validatorEdit = async (req: Request, res: Response, next: NextFunct
   }
 
   if (errorsValidation.length !== 0) {
-    const customError = new CustomError(
-      400,
-      'Validation',
-      'Edit user validation error',
-      null,
-      null,
-      errorsValidation,
-    );
+    const customError = new CustomError(400, 'Validation', 'Edit user validation error', null, null, errorsValidation);
     return next(customError);
   }
   return next();

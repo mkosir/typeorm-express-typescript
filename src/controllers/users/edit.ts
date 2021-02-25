@@ -13,9 +13,7 @@ export const edit = async (req: Request, res: Response, next: NextFunction) => {
     const user = await userRepository.findOne({ where: { id } });
 
     if (!user) {
-      const customError = new CustomError(404, 'General', `User with id:${id} not found.`, [
-        'User not found.',
-      ]);
+      const customError = new CustomError(404, 'General', `User with id:${id} not found.`, ['User not found.']);
       return next(customError);
     }
 

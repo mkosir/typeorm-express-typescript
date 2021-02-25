@@ -14,9 +14,7 @@ export const show = async (req: Request, res: Response, next: NextFunction) => {
     });
 
     if (!user) {
-      const customError = new CustomError(404, 'General', `User with id:${id} not found.`, [
-        'User not found.',
-      ]);
+      const customError = new CustomError(404, 'General', `User with id:${id} not found.`, ['User not found.']);
       return next(customError);
     }
     res.customSuccess(200, 'User found', user);
