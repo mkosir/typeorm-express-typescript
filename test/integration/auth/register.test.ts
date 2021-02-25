@@ -5,7 +5,7 @@ import { getRepository, Connection, Repository } from 'typeorm';
 
 import { app } from '../../../src/index';
 import { dbCreateConnection } from '../../../src/typeorm/dbCreateConnection';
-import { User } from '../../../src/typeorm/entities/user/User';
+import { User } from '../../../src/typeorm/entities/users/User';
 
 describe('POST /v1/register', () => {
   let dbConnection: Connection;
