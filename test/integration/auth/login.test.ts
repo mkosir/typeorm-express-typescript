@@ -56,9 +56,7 @@ describe('POST /v1/login', () => {
   });
 
   it('should report error when the email provided is not valid', async () => {
-    const res = await request(app)
-      .post('/v1/login')
-      .send({ email: 'not_valid_email', password: userPassword });
+    const res = await request(app).post('/v1/login').send({ email: 'not_valid_email', password: userPassword });
     expect(res.status).to.equal(400);
     expect(res.body.error_type).to.equal('Validation');
     expect(res.body.error_message).to.equal('Login validation error');
