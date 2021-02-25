@@ -31,9 +31,9 @@ Two docker containers are created:
 - [TypeScript v4](https://github.com/microsoft/TypeScript) codebase
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - [Docker](https://www.docker.com/) environment
-  - easily start local development using [Docker Compose](https://docs.docker.com/compose/) with single command `npm run docker:dev`
-  - connect to different staging or production environments `npm run docker: [stage|prod]`
-  - ready for microservices development and deployment  
+  - Easily start local development using [Docker Compose](https://docs.docker.com/compose/) with single command `npm run docker:dev`
+  - Connect to different staging or production environments `npm run docker: [stage|prod]`
+  - Ready for microservices development and deployment.  
     Once API changes are made, just build and push new docker image with your favourite CI/CD tool  
     `docker build -t <username>/api-boilerplate:latest .`  
     `docker push <username>/api-boilerplate:latest`
