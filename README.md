@@ -22,7 +22,7 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 
 Two docker containers are created:
 
-- one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are user=`walter`, password=`white` which you can change in [.env file](./.env).
+- one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are user=`walter`, password=`white`, that can be modified in [.env file](./.env) (not added to .gitignore for demo purposes).
 - and one Node (v14 Alpine) container instance with running boilerplate RESTful API service.
 
 ## Features:
