@@ -46,6 +46,7 @@ Two docker containers are created:
 - Linting with [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/) code formatter
 - Git hooks with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
+- Automated npm & Docker dependency updates with [Renovate](https://github.com/renovatebot/renovate) (patch version only)
 
 ## Other awesome boilerplates:
 
