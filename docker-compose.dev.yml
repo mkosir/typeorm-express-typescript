@@ -3,7 +3,7 @@ version: '3'
 services:
   db_postgres:
     container_name: 'db_boilerplate'
-    image: 'postgres:13-alpine'
+    image: 'postgres:12.6-alpine'
     restart: always
     env_file:
       - .env
@@ -25,6 +25,7 @@ services:
 
   be_boilerplate_test:
     container_name: 'be_test_boilerplate'
+    command: echo 'Test container ready'
     build: .
     stdin_open: true
     tty: true
