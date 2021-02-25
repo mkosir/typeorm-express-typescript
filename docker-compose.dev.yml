@@ -30,7 +30,7 @@ services:
     stdin_open: true
     tty: true
     depends_on:
-      - be_boilerplate
+      - db_postgres
     links:
       - db_postgres
     env_file:
