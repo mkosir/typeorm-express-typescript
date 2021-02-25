@@ -52,7 +52,7 @@ Two docker containers are created:
 
 ## Other awesome boilerplates:
 
-Each boilerplate comes with it's own flavor, check out other awesome boilerplates:
+Each boilerplate comes with it's own flavor of libraries and setup, check out others:
 
 - [Express and TypeORM with TypeScript](https://github.com/typeorm/typescript-express-example)
 - [Node.js, Express.js & TypeScript Boilerplate for Web Apps](https://github.com/jverhoelen/node-express-typescript-boilerplate)
