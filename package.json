@@ -4,7 +4,7 @@
   "description": "RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha.",
   "scripts": {
     "dev": "debug=* NODE_PATH=./src ts-node-dev --respawn ./src/index.ts",
-    "build": "tsc",
+    "build": "rimraf dist && tsc",
     "start": "rimraf dist && npm run build && NODE_PATH=./dist node ./dist/index.js",
     "lint": "eslint --max-warnings 0 --ext .js,ts src",
     "lint-prettier": "prettier --config .prettierrc --list-different '{src,test}/**/*.{ts,js,css,scss}'",
