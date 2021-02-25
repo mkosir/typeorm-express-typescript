@@ -29,11 +29,14 @@ Two docker containers are created:
 
 - [Express](https://github.com/expressjs/express) framework
 - [TypeScript v4](https://github.com/microsoft/TypeScript) codebase
+- [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - [Docker](https://www.docker.com/) environment
   - easily start local development using [Docker Compose](https://docs.docker.com/compose/) with single command `npm run docker:dev`
   - connect to different staging or production environments `npm run docker: [stage|prod]`
-  - ready for microservices development and deployment
-- [TypeORM](https://typeorm.io/) using Data Mapper pattern
+  - ready for microservices development and deployment  
+    Once API changes are made, just build and push new docker image with your favourite CI/CD tool  
+    `docker build -t <username>/api-boilerplate:latest .`  
+    `docker push <username>/api-boilerplate:latest`
 - JWT authentication and role based authorization using custom middleware
 - Consistent HTTP responses and requests payloads with [type definitions](./src/types/express/index.d.ts)
 - Error handling middleware with consistent [schema JSON response](./src/utils/response/CustomError.ts), that can be modified to suit your needs
