@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner, getRepository } from 'typeorm';
 
-import { User } from '../entities/users/User';
 import { Role } from '../entities/users/types';
+import { User } from '../entities/users/User';
 
 export class SeedUsers1590519635401 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {
