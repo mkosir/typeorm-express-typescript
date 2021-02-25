@@ -2,8 +2,8 @@ version: '3'
 
 services:
   be_boilerplate:
-    command: npm start
+    command: /bin/sh -c "echo 'Running API on production!' && npm run build && npm start"
     ports:
-      - '80:4000'
+      - '4000:4000'
     env_file:
       - ./config/stage.env
