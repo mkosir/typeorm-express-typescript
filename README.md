@@ -11,23 +11,28 @@ Minimal boilerplate for building RESTful APIs with JWT authentication and role b
 
 ## Running
 
-_Easily set up a local development environment!_
+_Easily set up a local development environment with single command!_
 
 - clone the repo
 - `npm run docker:dev` 🚀
 
 Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
 
-  Two docker container instances are going to be created:
+### _What happened_
 
-  - one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are user=`walter`, password=`white` which you can change in [.env file](./.env).
-  - and one Node (v14 Alpine) instance container with running boilerplate RESTful API service.
+Two docker containers are created:
+
+- one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are user=`walter`, password=`white` which you can change in [.env file](./.env).
+- and one Node (v14 Alpine) container instance with running boilerplate RESTful API service.
 
 ## Features:
 
 - [Express](https://github.com/expressjs/express) framework
 - [TypeScript v4](https://github.com/microsoft/TypeScript) codebase
-- [Docker](https://www.docker.com/) environment, set up for microservices development and deployment
+- [Docker](https://www.docker.com/) environment
+  - easily start local development using [Docker Compose](https://docs.docker.com/compose/) with single command `npm run docker:dev`
+  - connect to different staging or production environments `npm run docker: [stage|prod]`
+  - ready for microservices development and deployment
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - JWT authentication and role based authorization using custom middleware
 - Consistent HTTP responses and requests payloads with [type definitions](./src/types/express/index.d.ts)
