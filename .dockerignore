@@ -1,5 +1,7 @@
+config
 database
 dist
-log
 node_modules
+scripts
 .git
+.env
