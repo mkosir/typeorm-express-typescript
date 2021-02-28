@@ -37,10 +37,10 @@ Two docker containers are created:
     Once API changes are made, just build and push new docker image with your favourite CI/CD tool  
     `docker build -t <username>/api-boilerplate:latest .`  
     `docker push <username>/api-boilerplate:latest`
-- JWT authentication and role based authorization using custom middleware
 - Contract First REST API Design
   - Consistent HTTP responses and requests payloads with [type definitions](./src/types/express/index.d.ts)
   - Error handling middleware with consistent [schema JSON response](./src/utils/response/CustomError.ts), that can be modified to suit your needs
+- JWT authentication and role based authorization using custom middleware
 - Set local, stage or production [environmental variables](./config) with [type definitions](./src/types/ProcessEnv.d.ts)
 - Logging with [morgan](https://github.com/expressjs/morgan)
 - Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
