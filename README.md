@@ -43,7 +43,7 @@ Two docker containers are created:
 - JWT authentication and role based authorization using custom middleware
 - Set local, stage or production [environmental variables](./config) with [type definitions](./src/types/ProcessEnv.d.ts)
 - Logging with [morgan](https://github.com/expressjs/morgan)
-- Tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
+- Unit and integration tests with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - Linting with [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/) code formatter
 - Git hooks with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
