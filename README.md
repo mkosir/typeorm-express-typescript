@@ -18,7 +18,7 @@ _Easily set up a local development environment with single command!_
 
 Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
 
-### _What happened_
+### _What happened_ 💥
 
 Two docker containers are created:
 
