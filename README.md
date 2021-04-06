@@ -18,7 +18,7 @@ _Easily set up a local development environment with single command!_
 
 Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config](/postman).
 
-### _What happened_
+### _What happened_ 💥
 
 Two docker containers are created:
 
@@ -32,7 +32,7 @@ Two docker containers are created:
 - [TypeORM](https://typeorm.io/) using Data Mapper pattern
 - [Docker](https://www.docker.com/) environment:
   - Easily start local development using [Docker Compose](https://docs.docker.com/compose/) with single command `npm run docker:dev`
-  - Connect to different staging or production environments `npm run docker: [stage|prod]`
+  - Connect to different staging or production environments `npm run docker:[stage|prod]`
   - Ready for **microservices** development and deployment.  
     Once API changes are made, just build and push new docker image with your favourite CI/CD tool  
     `docker build -t <username>/api-boilerplate:latest .`  
