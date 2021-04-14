@@ -30,7 +30,7 @@
     "helmet": "^4.4.1",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "pg": "^8.5.1",
+    "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "validator": "^13.5.2"
   },
@@ -55,7 +55,7 @@
     "commitizen": "^4.2.3",
     "dotenv": "^8.2.0",
     "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "husky": "^4.3.8",
