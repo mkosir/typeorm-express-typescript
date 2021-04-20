@@ -32,7 +32,7 @@
     "morgan": "^1.10.0",
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
-    "validator": "^13.5.2"
+    "validator": "^13.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
