@@ -1,7 +1,3 @@
-export type ErrorValidation = { [key: string]: string };
-
-export type ErrorType = 'General' | 'Raw' | 'Validation' | 'Unauthorized';
-
 export type ErrorResponse = {
   errorType: ErrorType;
   errorMessage: string;
@@ -10,3 +6,7 @@ export type ErrorResponse = {
   errorsValidation: ErrorValidation[] | null;
   stack?: string;
 };
+
+export type ErrorType = 'General' | 'Raw' | 'Validation' | 'Unauthorized';
+
+export type ErrorValidation = { [key: string]: string };
