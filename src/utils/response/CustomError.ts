@@ -6,7 +6,6 @@ type ErrorResponse = {
   errors: string[] | null;
   errorRaw: any;
   errorsValidation: ErrorValidation[] | null;
-  // If NODE_ENV='production' the stack trace is not included in the response
   stack?: string;
 };
 
