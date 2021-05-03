@@ -39,7 +39,7 @@ Two docker containers are created:
     `docker push <username>/api-boilerplate:latest`
 - Contract first REST API design:
   - never break API again with HTTP responses and requests payloads using [type definitions](./src/types/express/index.d.ts)
-  - Consistent schema error [response](./src/utils/response/CustomError.ts). Your frontend will always know how to handle errors thrown in `try...catch` statements 💪
+  - Consistent schema error [response](./src/utils/response/custom-error/types.ts). Your frontend will always know how to handle errors thrown in `try...catch` statements 💪
 - JWT authentication and role based authorization using custom middleware
 - Set local, stage or production [environmental variables](./config) with [type definitions](./src/types/ProcessEnv.d.ts)
 - Logging with [morgan](https://github.com/expressjs/morgan)
