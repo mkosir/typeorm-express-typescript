@@ -1,13 +1,4 @@
-export type ErrorValidation = { [key: string]: string };
-type ErrorType = 'General' | 'Raw' | 'Validation' | 'Unauthorized';
-type ErrorResponse = {
-  errorType: ErrorType;
-  errorMessage: string;
-  errors: string[] | null;
-  errorRaw: any;
-  errorsValidation: ErrorValidation[] | null;
-  stack?: string;
-};
+import { ErrorType, ErrorValidation, ErrorResponse } from './types';
 
 export class CustomError extends Error {
   private httpStatusCode: number;

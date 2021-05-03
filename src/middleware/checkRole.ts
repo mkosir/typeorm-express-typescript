@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 
 import { Role } from '../typeorm/entities/users/types';
-import { CustomError } from '../utils/response/CustomError';
+import { CustomError } from '../utils/response/custom-error/CustomError';
 
 export const checkRole = (roles: Role[], isSelfAllowed = false) => {
   return async (req: Request, res: Response, next: NextFunction) => {
