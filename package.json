@@ -6,7 +6,9 @@
     "dev": "debug=* NODE_PATH=./src ts-node-dev --respawn ./src/index.ts",
     "build": "rimraf dist && tsc",
     "start": "NODE_PATH=./dist node ./dist/index.js",
+    "prepare": "husky install",
     "lint": "eslint --max-warnings 0 --ext .js,ts src",
+    "lint-staged-husky": "lint-staged",
     "lint-prettier": "prettier --config .prettierrc --list-different '{src,test}/**/*.{ts,js,css,scss}'",
     "prettier": "prettier --config .prettierrc --write './**/*.{ts,js,css,scss,json,md}'",
     "test": "NODE_PATH=./src mocha --require ts-node/register 'test/integration/**/*.test.ts' --timeout 20000 --exit",
@@ -59,6 +61,7 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
     "prettier": "^2.3.0",
@@ -70,6 +73,14 @@
     "typeorm-naming-strategies": "^2.0.0",
     "typescript": "4.2.4"
   },
+  "lint-staged": {
+    "*": [
+      "pretty-quick --staged"
+    ],
+    "{src,test}/**/*.{js,ts}": [
+      "eslint --max-warnings 0"
+    ]
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -78,13 +89,6 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "npm run lint && npm run build"
     }
   }
 }
