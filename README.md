@@ -1,10 +1,10 @@
 # Express / TypeScript / TypeORM RESTful API boilerplate
 
+![Heisenberg](heisenberg.jpg)
+
 [![CI][build-badge]][build-url]
 [![TypeScript][typescript-badge]][typescript-url]
 [![prettier][prettier-badge]][prettier-url]
-
-![Heisenberg](heisenberg.jpg)
 
 Minimal boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript, TypeORM, Postgres & Docker with focus on best practices and painless developer experience.
 
