@@ -1,6 +1,10 @@
-![Heisenberg](heisenberg.jpg)
-
 # Express / TypeScript / TypeORM RESTful API boilerplate
+
+[![CI][build-badge]][build-url]
+[![TypeScript][typescript-badge]][typescript-url]
+[![prettier][prettier-badge]][prettier-url]
+
+![Heisenberg](heisenberg.jpg)
 
 Minimal boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript, TypeORM, Postgres & Docker with focus on best practices and painless developer experience.
 
@@ -59,3 +63,10 @@ Each boilerplate comes with it's own flavor of libraries and setup, check out ot
 - [Node.js, Express.js & TypeScript Boilerplate for Web Apps](https://github.com/jverhoelen/node-express-typescript-boilerplate)
 - [Express boilerplate for building RESTful APIs](https://github.com/danielfsousa/express-rest-es2017-boilerplate)
 - [A delightful way to building a RESTful API with NodeJs & TypeScript by @w3tecch](https://github.com/w3tecch/express-typescript-boilerplate)
+
+[build-badge]: https://github.com/mkosir/react-parallax-tilt/actions/workflows/main.yml/badge.svg
+[build-url]: https://github.com/mkosir/react-parallax-tilt/actions/workflows/main.yml
+[typescript-badge]: https://badges.frapsoft.com/typescript/code/typescript.svg?v=101
+[typescript-url]: https://github.com/microsoft/TypeScript
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+[prettier-url]: https://github.com/prettier/prettier
