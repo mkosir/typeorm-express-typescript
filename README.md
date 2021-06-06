@@ -64,8 +64,8 @@ Each boilerplate comes with it's own flavor of libraries and setup, check out ot
 - [Express boilerplate for building RESTful APIs](https://github.com/danielfsousa/express-rest-es2017-boilerplate)
 - [A delightful way to building a RESTful API with NodeJs & TypeScript by @w3tecch](https://github.com/w3tecch/express-typescript-boilerplate)
 
-[build-badge]: https://github.com/mkosir/react-parallax-tilt/actions/workflows/main.yml/badge.svg
-[build-url]: https://github.com/mkosir/react-parallax-tilt/actions/workflows/main.yml
+[build-badge]: https://github.com/mkosir/express-typescript-typeorm-boilerplate/actions/workflows/main.yml/badge.svg
+[build-url]: https://github.com/mkosir/express-typescript-typeorm-boilerplate/actions/workflows/main.yml
 [typescript-badge]: https://badges.frapsoft.com/typescript/code/typescript.svg?v=101
 [typescript-url]: https://github.com/microsoft/TypeScript
 [prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
