@@ -70,3 +70,7 @@ Each boilerplate comes with it's own flavor of libraries and setup, check out ot
 [typescript-url]: https://github.com/microsoft/TypeScript
 [prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
 [prettier-url]: https://github.com/prettier/prettier
+
+## Contributing
+
+All contributions are welcome! 
