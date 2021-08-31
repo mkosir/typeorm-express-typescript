@@ -10,7 +10,7 @@ Minimal boilerplate for building RESTful APIs with JWT authentication and role b
 
 ## Requirements
 
-- [Node](https://nodejs.org/)
+- [Node v14+](https://nodejs.org/)
 - [Docker](https://www.docker.com/)
 
 ## Running
