@@ -52,7 +52,7 @@
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.0",
     "@types/supertest": "^2.0.11",
-    "@types/validator": "^13.6.3",
+    "@types/validator": "^13.6.4",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "chai": "^4.3.4",
