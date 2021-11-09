@@ -34,7 +34,7 @@
     "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.38",
+    "typeorm": "^0.2.39",
     "typeorm-naming-strategies": "^2.0.0",
     "validator": "^13.7.0"
   },
