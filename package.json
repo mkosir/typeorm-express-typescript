@@ -39,8 +39,8 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^14.1.0",
-    "@commitlint/config-conventional": "^14.1.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/body-parser": "^1.19.2",
     "@types/chai": "^4.2.22",
@@ -52,9 +52,9 @@
     "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.8",
     "@types/supertest": "^2.0.11",
-    "@types/validator": "^13.6.6",
-    "@typescript-eslint/eslint-plugin": "^5.3.1",
-    "@typescript-eslint/parser": "^5.3.1",
+    "@types/validator": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "chai": "^4.3.4",
     "commitizen": "^4.2.4",
     "dotenv": "^10.0.0",
@@ -72,7 +72,7 @@
     "supertest": "^6.1.6",
     "ts-node": "10.4.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "4.4.4"
+    "typescript": "4.5.2"
   },
   "lint-staged": {
     "*": [
