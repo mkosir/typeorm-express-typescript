@@ -10,7 +10,7 @@ Minimal boilerplate for building RESTful APIs with JWT authentication and role b
 
 ## Requirements
 
-- [Node v14+](https://nodejs.org/)
+- [Node v16+](https://nodejs.org/)
 - [Docker](https://www.docker.com/)
 
 ## Running
@@ -27,7 +27,7 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 Two docker containers are created:
 
 - one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are `user=walter`, `password=white`, that can be modified in [.env file](./.env) (not added to .gitignore for demo purposes).
-- and one Node (v14 Alpine) container instance with running boilerplate RESTful API service.
+- and one Node (v16 Alpine) container instance with running boilerplate RESTful API service.
 
 ## Features:
 
@@ -73,4 +73,4 @@ Each boilerplate comes with it's own flavor of libraries and setup, check out ot
 
 ## Contributing
 
-All contributions are welcome! 
+All contributions are welcome!
