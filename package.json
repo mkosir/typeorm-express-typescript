@@ -72,7 +72,7 @@
     "supertest": "^6.1.6",
     "ts-node": "10.4.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "4.5.2"
+    "typescript": "4.5.3"
   },
   "lint-staged": {
     "*": [
