@@ -61,7 +61,7 @@
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-no-array-reduce": "^1.0.40",
+    "eslint-plugin-no-array-reduce": "^1.0.41",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.7",
