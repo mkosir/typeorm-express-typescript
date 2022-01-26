@@ -55,7 +55,7 @@
     "@types/validator": "^13.7.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
-    "chai": "^4.3.5",
+    "chai": "^4.3.6",
     "commitizen": "^4.2.4",
     "dotenv": "^14.3.2",
     "eslint": "^8.7.0",
