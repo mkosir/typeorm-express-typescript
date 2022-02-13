@@ -46,7 +46,6 @@
     "@types/chai": "^4.3.0",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
-    "@types/helmet": "4.0.0",
     "@types/jsonwebtoken": "^8.5.8",
     "@types/mocha": "^9.1.0",
     "@types/morgan": "^1.9.3",
