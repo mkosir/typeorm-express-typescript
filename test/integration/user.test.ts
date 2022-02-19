@@ -4,9 +4,9 @@ import { agent as request } from 'supertest';
 import { getRepository, Connection, Repository } from 'typeorm';
 
 import { app } from '../../src/index';
-import { dbCreateConnection } from '../../src/typeorm/dbCreateConnection';
-import { Role } from '../../src/typeorm/entities/users/types';
-import { User } from '../../src/typeorm/entities/users/User';
+import { dbCreateConnection } from '../../src/orm/dbCreateConnection';
+import { Role } from '../../src/orm/entities/users/types';
+import { User } from '../../src/orm/entities/users/User';
 
 describe('Users API', () => {
   let dbConnection: Connection;
