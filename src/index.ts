@@ -12,8 +12,8 @@ import morgan from 'morgan';
 import './utils/response/customSuccess';
 import { errorHandler } from './middleware/errorHandler';
 import { getLanguage } from './middleware/getLanguage';
+import { dbCreateConnection } from './orm/dbCreateConnection';
 import routes from './routes';
-import { dbCreateConnection } from './typeorm/dbCreateConnection';
 
 export const app = express();
 app.use(cors());

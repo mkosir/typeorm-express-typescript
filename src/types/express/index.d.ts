@@ -1,4 +1,4 @@
-import { Language } from 'typeorm/entities/users/types';
+import { Language } from 'orm/entities/users/types';
 
 import { JwtPayload } from '../JwtPayload';
 

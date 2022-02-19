@@ -1,7 +1,7 @@
 import { ConnectionOptions } from 'typeorm';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 
-const configSeed: ConnectionOptions = {
+const config: ConnectionOptions = {
   type: 'postgres',
   host: process.env.PG_HOST,
   port: Number(process.env.PG_PORT),
@@ -10,12 +10,15 @@ const configSeed: ConnectionOptions = {
   database: process.env.POSTGRES_DB,
   synchronize: false,
   logging: false,
-  entities: ['src/typeorm/entities/**/*.ts'],
-  migrations: ['src/typeorm/seeds/**/*.ts'],
+  entities: ['src/orm/entities/**/*.ts'],
+  migrations: ['src/orm/migrations/**/*.ts'],
+  subscribers: ['src/orm/subscriber/**/*.ts'],
   cli: {
-    migrationsDir: 'src/typeorm/seeds',
+    entitiesDir: 'src/orm/entities',
+    migrationsDir: 'src/orm/migrations',
+    subscribersDir: 'src/orm/subscriber',
   },
   namingStrategy: new SnakeNamingStrategy(),
 };
 
-export = configSeed;
+export = config;
