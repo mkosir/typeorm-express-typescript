@@ -16,14 +16,14 @@
     "docker:dev": "docker-compose --file docker-compose.yml --file docker-compose.dev.yml --compatibility up --build",
     "docker:stage": "docker-compose --file docker-compose.yml --file docker-compose.stage.yml --compatibility up --build",
     "docker:prod": "docker-compose --file docker-compose.yml --file docker-compose.prod.yml --compatibility up --build",
-    "migration:run": "NODE_PATH=./src ts-node ./node_modules/typeorm/cli.js migration:run --config ./src/typeorm/config/ormconfig.ts",
-    "migration:run:dev": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/typeorm/cli.js migration:run --config ./src/typeorm/config/ormconfig.ts",
-    "migration:revert": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/typeorm/cli.js migration:revert --config ./src/typeorm/config/ormconfig.ts",
-    "migration:generate": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:generate --pretty --config ./src/typeorm/config/ormconfig.ts -n ",
-    "migration:create": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:create --config ./src/typeorm/config/ormconfig.ts -n ",
-    "seed:run": "NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:run --config ./src/typeorm/config/ormconfig-seed.ts",
-    "seed:run:dev": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:run --config ./src/typeorm/config/ormconfig-seed.ts",
-    "seed:create": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:create --config ./src/typeorm/config/ormconfig-seed.ts -n "
+    "migration:run": "NODE_PATH=./src ts-node ./node_modules/typeorm/cli.js migration:run --config ./src/orm/config/ormconfig.ts",
+    "migration:run:dev": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/typeorm/cli.js migration:run --config ./src/orm/config/ormconfig.ts",
+    "migration:revert": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/typeorm/cli.js migration:revert --config ./src/orm/config/ormconfig.ts",
+    "migration:generate": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:generate --pretty --config ./src/orm/config/ormconfig.ts -n ",
+    "migration:create": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:create --config ./src/orm/config/ormconfig.ts -n ",
+    "seed:run": "NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:run --config ./src/orm/config/ormconfig-seed.ts",
+    "seed:run:dev": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:run --config ./src/orm/config/ormconfig-seed.ts",
+    "seed:create": "PG_HOST=localhost NODE_PATH=./src ts-node ./node_modules/.bin/typeorm migration:create --config ./src/orm/config/ormconfig-seed.ts -n "
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
