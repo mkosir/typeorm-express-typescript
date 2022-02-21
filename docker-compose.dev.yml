@@ -25,7 +25,7 @@ services:
 
   be_boilerplate_test:
     container_name: 'be_test_boilerplate'
-    command: echo 'Test container ready'
+    command: sh -c "echo 'Test container ready' && tail -f /dev/null"
     build: .
     stdin_open: true
     tty: true
