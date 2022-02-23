@@ -42,9 +42,9 @@ describe('Users', () => {
 
   beforeEach(async () => {
     await userRepository.save([adminUser, standardUser]);
-    let res = await request(app).post('/v1/login').send({ email: adminUser.email, password: userPassword });
+    let res = await request(app).post('/v1/auth/login').send({ email: adminUser.email, password: userPassword });
     adminUserToken = res.body.data;
-    res = await request(app).post('/v1/login').send({ email: standardUser.email, password: userPassword });
+    res = await request(app).post('/v1/auth/login').send({ email: standardUser.email, password: userPassword });
     standardUserToken = res.body.data;
   });
 
