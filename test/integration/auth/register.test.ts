@@ -44,11 +44,11 @@ describe('Register', () => {
       .post('/v1/auth/register')
       .send({ email: user.email, password: userPassword, passwordConfirm: userPassword });
     expect(res.status).to.equal(400);
-    expect(res.body.error_type).to.equal('General');
-    expect(res.body.error_message).to.equal('User already exists');
+    expect(res.body.errorType).to.equal('General');
+    expect(res.body.errorMessage).to.equal('User already exists');
     expect(res.body.errors).to.eql([`Email '${user.email}' already exists`]);
-    expect(res.body.error_raw).to.an('null');
-    expect(res.body.errors_validation).to.an('null');
+    expect(res.body.errorRaw).to.an('null');
+    expect(res.body.errorsValidation).to.an('null');
     await userRepository.delete({ email: user.email });
   });
 });

@@ -49,20 +49,20 @@ describe('Login', () => {
   it("should report error when email and password don't match", async () => {
     const res = await request(app).post('/v1/auth/login').send({ email: user.email, password: 'wrong_password' });
     expect(res.status).to.equal(404);
-    expect(res.body.error_type).to.equal('General');
+    expect(res.body.errorType).to.equal('General');
     expect(res.body.errors).to.eql(['Incorrect email or password']);
-    expect(res.body.error_raw).to.an('null');
-    expect(res.body.errors_validation).to.an('null');
+    expect(res.body.errorRaw).to.an('null');
+    expect(res.body.errorsValidation).to.an('null');
   });
 
   it('should report error when the email provided is not valid', async () => {
     const res = await request(app).post('/v1/auth/login').send({ email: 'not_valid_email', password: userPassword });
     expect(res.status).to.equal(400);
-    expect(res.body.error_type).to.equal('Validation');
-    expect(res.body.error_message).to.equal('Login validation error');
+    expect(res.body.errorType).to.equal('Validation');
+    expect(res.body.errorMessage).to.equal('Login validation error');
     expect(res.body.errors).to.an('null');
-    expect(res.body.error_raw).to.an('null');
-    expect(res.body.errors_validation).to.eql([
+    expect(res.body.errorRaw).to.an('null');
+    expect(res.body.errorsValidation).to.eql([
       {
         email: 'Email is invalid',
       },
