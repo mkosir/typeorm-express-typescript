@@ -22,3 +22,19 @@ services:
       - db_postgres
     links:
       - db_postgres
+
+  be_boilerplate_test:
+    container_name: 'be_test_boilerplate'
+    command: sh -c "echo 'Test container ready' && tail -f /dev/null"
+    build: .
+    stdin_open: true
+    tty: true
+    depends_on:
+      - db_postgres
+    links:
+      - db_postgres
+    env_file:
+      - .env
+    volumes:
+      - .:/app/
+      - /app/node_modules
