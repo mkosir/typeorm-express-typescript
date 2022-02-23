@@ -26,10 +26,6 @@ describe('Login', () => {
     userRepository = getRepository(User);
   });
 
-  after(async () => {
-    await dbConnection.close();
-  });
-
   beforeEach(async () => {
     await userRepository.save(user);
   });

@@ -22,10 +22,6 @@ describe('Register', () => {
     userRepository = getRepository(User);
   });
 
-  after(async () => {
-    await dbConnection.close();
-  });
-
   it('should register a new user', async () => {
     const res = await request(app)
       .post('/v1/auth/register')

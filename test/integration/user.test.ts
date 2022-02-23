@@ -36,10 +36,6 @@ describe('Users', () => {
     userRepository = getRepository(User);
   });
 
-  after(async () => {
-    await dbConnection.close();
-  });
-
   beforeEach(async () => {
     await userRepository.save([adminUser, standardUser]);
     let res = await request(app).post('/v1/auth/login').send({ email: adminUser.email, password: userPassword });
