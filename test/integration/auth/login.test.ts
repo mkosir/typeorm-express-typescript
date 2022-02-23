@@ -8,7 +8,7 @@ import { dbCreateConnection } from '../../../src/orm/dbCreateConnection';
 import { Role } from '../../../src/orm/entities/users/types';
 import { User } from '../../../src/orm/entities/users/User';
 
-describe('POST /v1/login', () => {
+describe('Login', () => {
   let dbConnection: Connection;
   let userRepository: Repository<User>;
 
@@ -39,7 +39,7 @@ describe('POST /v1/login', () => {
   });
 
   it('should return a JWT token', async () => {
-    const res = await request(app).post('/v1/login').send({ email: user.email, password: userPassword });
+    const res = await request(app).post('/v1/auth/login').send({ email: user.email, password: userPassword });
     expect(res.status).to.equal(200);
     expect(res.body.message).to.equal('Token successfully created.');
     expect(res.body.data).not.to.be.empty;
@@ -47,7 +47,7 @@ describe('POST /v1/login', () => {
   });
 
   it("should report error when email and password don't match", async () => {
-    const res = await request(app).post('/v1/login').send({ email: user.email, password: 'wrong_password' });
+    const res = await request(app).post('/v1/auth/login').send({ email: user.email, password: 'wrong_password' });
     expect(res.status).to.equal(404);
     expect(res.body.error_type).to.equal('General');
     expect(res.body.errors).to.eql(['Incorrect email or password']);
@@ -56,7 +56,7 @@ describe('POST /v1/login', () => {
   });
 
   it('should report error when the email provided is not valid', async () => {
-    const res = await request(app).post('/v1/login').send({ email: 'not_valid_email', password: userPassword });
+    const res = await request(app).post('/v1/auth/login').send({ email: 'not_valid_email', password: userPassword });
     expect(res.status).to.equal(400);
     expect(res.body.error_type).to.equal('Validation');
     expect(res.body.error_message).to.equal('Login validation error');

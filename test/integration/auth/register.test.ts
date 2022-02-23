@@ -7,7 +7,7 @@ import { app } from '../../../src/index';
 import { dbCreateConnection } from '../../../src/orm/dbCreateConnection';
 import { User } from '../../../src/orm/entities/users/User';
 
-describe('POST /v1/register', () => {
+describe('Register', () => {
   let dbConnection: Connection;
   let userRepository: Repository<User>;
 
@@ -28,7 +28,7 @@ describe('POST /v1/register', () => {
 
   it('should register a new user', async () => {
     const res = await request(app)
-      .post('/v1/register')
+      .post('/v1/auth/register')
       .send({ email: user.email, password: userPassword, passwordConfirm: userPassword });
     expect(res.status).to.equal(200);
     expect(res.body.message).to.equal('User successfully created.');
@@ -38,10 +38,10 @@ describe('POST /v1/register', () => {
 
   it('should report error when email already exists', async () => {
     let res = await request(app)
-      .post('/v1/register')
+      .post('/v1/auth/register')
       .send({ email: user.email, password: userPassword, passwordConfirm: userPassword });
     res = await request(app)
-      .post('/v1/register')
+      .post('/v1/auth/register')
       .send({ email: user.email, password: userPassword, passwordConfirm: userPassword });
     expect(res.status).to.equal(400);
     expect(res.body.error_type).to.equal('General');

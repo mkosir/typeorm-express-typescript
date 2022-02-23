@@ -8,7 +8,7 @@ import { dbCreateConnection } from '../../src/orm/dbCreateConnection';
 import { Role } from '../../src/orm/entities/users/types';
 import { User } from '../../src/orm/entities/users/User';
 
-describe('Users API', () => {
+describe('Users', () => {
   let dbConnection: Connection;
   let userRepository: Repository<User>;
 
@@ -52,7 +52,7 @@ describe('Users API', () => {
     await userRepository.delete([adminUser.id, standardUser.id]);
   });
 
-  describe('GET /v1/users', () => {
+  describe('GET /v1/auth/users', () => {
     it('should get all users', async () => {
       const res = await request(app).get('/v1/users').set('Authorization', adminUserToken);
       expect(res.status).to.equal(200);
@@ -74,7 +74,7 @@ describe('Users API', () => {
     });
   });
 
-  describe('GET /v1/users//:id([0-9]+)', () => {
+  describe('GET /v1/auth/users//:id([0-9]+)', () => {
     it('should get user', async () => {
       const user = await userRepository.findOne({ email: adminUser.email });
       const res = await request(app).get(`/v1/users/${user.id}`).set('Authorization', adminUserToken);
