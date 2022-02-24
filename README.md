@@ -6,7 +6,13 @@
 [![TypeScript][typescript-badge]][typescript-url]
 [![prettier][prettier-badge]][prettier-url]
 
-Minimal boilerplate for building RESTful APIs with JWT authentication and role based authorization using Express, TypeScript, TypeORM, Postgres & Docker with focus on best practices and painless developer experience.
+Boilerplate with focus on best practices and painless developer experience:
+
+- Minimal setup that can be extended to your needs 🔧
+- Spin it up with single command 🌀
+- TypeScript first
+- RESTful APIs
+- JWT authentication with role based authorization
 
 ## Requirements
 
