@@ -24,10 +24,11 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 
 ### _What happened_ 💥
 
-Two docker containers are created:
+Containers created:
 
-- one container instance with Postgres database seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are `user=walter`, `password=white` (configured in [.env file](./.env))
-- and one Node (v16 Alpine) container instance with running boilerplate RESTful API service
+- Postgres database container seeded with 💊 Breaking Bad characters in `Users` table. Postgres database default credentials are `user=walter`, `password=white` (configured in [.env file](./.env))
+- Node (v16 Alpine) container with running boilerplate RESTful API service
+- and one Node container instance to run tests locally or CI
 
 ## Features:
 
@@ -41,6 +42,11 @@ Two docker containers are created:
     Once API changes are made, just build and push new docker image with your favourite CI/CD tool  
     `docker build -t <username>/api-boilerplate:latest .`  
     `docker push <username>/api-boilerplate:latest`
+  - Run unit, integration (or setup E2E) tests:
+    ```sh
+    docker exec -ti be_boilerplate_test sh
+    npm run test
+    ```
 - Contract first REST API design:
   - never break API again with HTTP responses and requests payloads using [type definitions](./src/types/express/index.d.ts)
   - Consistent schema error [response](./src/utils/response/custom-error/types.ts). Your frontend will always know how to handle errors thrown in `try...catch` statements 💪
