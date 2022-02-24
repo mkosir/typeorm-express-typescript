@@ -3,10 +3,11 @@ import { expect } from 'chai';
 import { agent as request } from 'supertest';
 import { getRepository, Connection, Repository } from 'typeorm';
 
-import { app } from '../../../src/index';
-import { dbCreateConnection } from '../../../src/orm/dbCreateConnection';
-import { Role } from '../../../src/orm/entities/users/types';
-import { User } from '../../../src/orm/entities/users/User';
+import { dbCreateConnection } from 'orm/dbCreateConnection';
+import { Role } from 'orm/entities/users/types';
+import { User } from 'orm/entities/users/User';
+
+import { app } from '../../';
 
 describe('Login', () => {
   let dbConnection: Connection;
