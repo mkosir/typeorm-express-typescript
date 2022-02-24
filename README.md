@@ -8,7 +8,7 @@
 
 Boilerplate with focus on best practices and painless developer experience:
 
-- Minimal setup that can be extended to your needs 🔧
+- Minimal setup that can be extended 🔧
 - Spin it up with single command 🌀
 - TypeScript first
 - RESTful APIs
