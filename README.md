@@ -32,7 +32,7 @@ Visit [localhost:4000](http://localhost:4000/) or if using Postman grab [config]
 
 Containers created:
 
-- Postgres database container seeded with 💊 Breaking Bad characters in `Users` table (default credentials `user=walter`, `password=white` configured in [.env file](./.env))
+- Postgres database container seeded with 💊 Breaking Bad characters in `Users` table (default credentials `user=walter`, `password=white` in [.env file](./.env))
 - Node (v16 Alpine) container with running boilerplate RESTful API service
 - and one Node container instance to run tests locally or CI
 
