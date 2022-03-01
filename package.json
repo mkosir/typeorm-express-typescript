@@ -52,8 +52,8 @@
     "@types/node": "^17.0.21",
     "@types/supertest": "^2.0.11",
     "@types/validator": "^13.7.1",
-    "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "@typescript-eslint/parser": "^5.12.1",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
     "chai": "^4.3.6",
     "commitizen": "^4.2.4",
     "dotenv": "^16.0.0",
@@ -71,7 +71,7 @@
     "supertest": "^6.2.2",
     "ts-node": "10.5.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "4.5.5"
+    "typescript": "4.6.2"
   },
   "lint-staged": {
     "*": [
