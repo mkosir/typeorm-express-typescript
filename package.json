@@ -63,7 +63,7 @@
     "eslint-plugin-no-array-reduce": "^1.0.48",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.6",
+    "lint-staged": "^12.3.7",
     "mocha": "^9.2.2",
     "nyc": "^15.1.0",
     "prettier": "^2.6.0",
