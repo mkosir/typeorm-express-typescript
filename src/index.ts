@@ -30,7 +30,6 @@ try {
 } catch (err) {
   console.log(err);
 }
-app.use(morgan('combined'));
 
 app.use('/', routes);
 
