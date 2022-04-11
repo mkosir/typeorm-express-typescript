@@ -48,7 +48,7 @@ Containers created:
     Once API changes are made, just build and push new docker image with your favourite CI/CD tool  
     `docker build -t <username>/api-boilerplate:latest .`  
     `docker push <username>/api-boilerplate:latest`
-  - Run unit, integration (or setup E2E) tests as `docker exec -ti be_boilerplate_test sh` and `npm run test`
+  - Run unit, integration (or setup with your frontend E2E) tests as `docker exec -ti be_boilerplate_test sh` and `npm run test`
 - Contract first REST API design:
   - never break API again with HTTP responses and requests payloads using [type definitions](./src/types/express/index.d.ts)
   - Consistent schema error [response](./src/utils/response/custom-error/types.ts). Your frontend will always know how to handle errors thrown in `try...catch` statements 💪
