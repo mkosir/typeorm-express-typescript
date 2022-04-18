@@ -7,10 +7,12 @@
     "build": "rimraf dist && tsc",
     "start": "NODE_PATH=./dist node ./dist/index.js",
     "prepare": "husky install",
-    "lint": "eslint --max-warnings 0 --ext .js,ts src",
+    "lint": "eslint --max-warnings 0 . && npm run tsc",
+    "lint-fix": "eslint --fix .",
     "lint-staged-husky": "lint-staged",
-    "lint-prettier": "prettier --config .prettierrc --list-different '{src,test}/**/*.{ts,js,css,scss}'",
-    "prettier": "prettier --config .prettierrc --write './**/*.{ts,js,css,scss,json,md}'",
+    "tsc": "tsc --noEmit",
+    "format-lint": "prettier --config .prettierrc -l --ignore-unknown .",
+    "format-fix": "prettier --config .prettierrc --write --ignore-unknown .",
     "test": "NODE_PATH=./src mocha --require ts-node/register 'src/**/*.test.ts' --timeout 20000 --exit",
     "commit": "git-cz",
     "docker:dev": "docker-compose --file docker-compose.yml --file docker-compose.dev.yml --compatibility up --build",
@@ -71,24 +73,7 @@
     "supertest": "^6.2.2",
     "ts-node": "10.7.0",
     "ts-node-dev": "^1.1.8",
+    "tsc-files": "^1.1.3",
     "typescript": "4.6.2"
-  },
-  "lint-staged": {
-    "*": [
-      "pretty-quick --staged"
-    ],
-    "{src,test}/**/*.{js,ts}": [
-      "eslint --max-warnings 0"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
   }
 }
