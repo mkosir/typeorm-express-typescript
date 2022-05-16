@@ -1,8 +1,9 @@
-#  Express / TypeScript / TypeORM RESTful API boilerplate ![Heisenberg](misc/heisenberg.png)
+#  Express / TypeScript / TypeORM RESTful API boilerplate
 
 [![CI][build-badge]][build-url]
 [![TypeScript][typescript-badge]][typescript-url]
 [![prettier][prettier-badge]][prettier-url]
+![Heisenberg](misc/heisenberg.png)
 
 Boilerplate with focus on best practices and painless developer experience:
 
