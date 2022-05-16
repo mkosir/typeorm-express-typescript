@@ -1,6 +1,4 @@
-# Express / TypeScript / TypeORM RESTful API boilerplate
-
-![Heisenberg](heisenberg.jpg)
+#  Express / TypeScript / TypeORM RESTful API boilerplate ![Heisenberg](misc/heisenberg.png)
 
 [![CI][build-badge]][build-url]
 [![TypeScript][typescript-badge]][typescript-url]
