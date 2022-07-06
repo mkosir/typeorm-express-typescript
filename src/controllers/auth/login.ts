@@ -31,7 +31,7 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
       role: user.role as Role,
       created_at: user.created_at,
     };
-
+    // comment
     try {
       const token = createJwtToken(jwtPayload);
       res.customSuccess(200, 'Token successfully created.', `Bearer ${token}`);
