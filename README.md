@@ -84,3 +84,8 @@ Each boilerplate comes with it's own flavor of libraries and setup, check out ot
 ## Contributing
 
 All contributions are welcome!
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
