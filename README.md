@@ -5,9 +5,6 @@
 [![prettier][prettier-badge]][prettier-url]
 ![Heisenberg](misc/heisenberg.png)
 
-
-### Prisma instead of TypeORM boilerplate variant - [Prisma / Next.js / TypeScript boilerplate](https://github.com/mkosir/prisma-next-typescript)
-
 Boilerplate with focus on best practices and painless developer experience:
 
 - Minimal setup that can be extended 🔧
